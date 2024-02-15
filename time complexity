@@ -1,0 +1,51 @@
+# Data Structures Analysis
+
+## Arrays
+
+| Operation                               | One-Dimensional Array     | Two-Dimensional Array     |
+| --------------------------------------- | --------------------------| --------------------------|
+| Accessing an Element by Index           | Time: O(1)                | Time: O(1)                |
+|                                         | Space: O(1)               | Space: O(1)               |
+| Inserting an Element at the End         | Time: O(1) (Amortized)    | Time: O(1)                |
+|                                         | Space: O(1)               | Space: O(1)               |
+| Inserting an Element at the Beginning   | Time: O(n)                | Time: O(1)                |
+|                                         | Space: O(n)               | Space: O(n)               |
+| Searching for an Element (Linear Search)| Time: O(n)                | Time: O(m * n)            |
+|                                         | Space: O(1)               | Space: O(1)               |
+| Transposing a Matrix                    | N/A                       | Time: O(m * n)            |
+|                                         | N/A                       | Space: O(m * n)           |
+| Deletion of an Element                  | Time: O(n)                | Time: O(m*n)              |
+|                                         | Space: O(1)               | Space: O(1)               |
+
+## LinkedList
+
+| Operation                  | Time Complexity (Singly Linked List) | Time Complexity (Doubly Linked List) | Space Complexity |
+| -------------------------- | ------------------------------------- | ------------------------------------- | ---------------- |
+| Accessing by Index         | O(n)                                  | O(n)                                  | O(1)             |
+| Insertion at Beginning     | O(1)                                  | O(1)                                  | O(1)             |
+| Insertion at End           | O(n)                                  | O(1)                                  | O(1)             |
+| Insertion at Given Position| O(n)                                  | O(n)                                  | O(1)             |
+| Deletion at Beginning      | O(1)                                  | O(1)                                  | O(1)             |
+| Deletion at End            | O(n)                                  | O(1)                                  | O(1)             |
+| Deletion at Given Position | O(n)                                  | O(n)                                  | O(1)             |
+| Searching                  | O(n)                                  | O(n)                                  | O(1)             |
+
+## ArrayList
+
+| Operation                        | Time Complexity | Space Complexity |
+| -------------------------------- | --------------- | ---------------- |
+| Inserting Element in ArrayList   | O(1)            | O(n)             |
+| Removing Element from ArrayList  | O(n)            | O(1)             |
+| Traversing Elements in ArrayList | O(n)            | O(n)             |
+| Replacing Elements in ArrayList  | O(1)            | O(1)             |
+
+## Comparison of List Data Structures
+
+|                             | Linked list                   | Array | Dynamic array | Balanced tree | Random access list | Hashed array tree |
+| --------------------------- | ----------------------------- | ----- | ------------- | ------------- | ------------------ | ----------------- |
+| Indexing                    | O(n)                          | O(1)  | O(1)          | O(log n)      | O(log n)           | O(1)              |
+| Insert/delete at beginning  | O(1)                          | O(n)  | O(n)          | O(log n)      | O(1)               | O(n)              |
+| Insert/delete at end        | O(1) (doubly) / O(n) (singly) | O(1)  | O(1)(amortized) O(log n)      | O(log n)           | O(n)              |
+| Insert/delete in middle     | O(n) + O(1)                   | O(n)  | O(n)          | O(log n)      | O(log n)           | O(n)              |
+| Wasted space (average)      | O(n)                          | O     | O(n)          | O(n)          | O(n)               | O(sqrt(n))        |
+
